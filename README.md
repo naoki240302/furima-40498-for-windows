@@ -25,7 +25,7 @@
 | charge_load_id     | integer    | null; false                    |
 | shipping_time_id   | integer    | null; false                    |
 | area_id            | integer    | null; false                    |
-| user_id            | references | null; false, foreign_key: true |
+| user               | references | null; false, foreign_key: true |
 
 ### Association
 - belongs_to :user
@@ -98,7 +98,7 @@
 | street        | string     | null; false                    |
 | building      | string     |                                |
 | phone_number  | string     | null; false                    |
-| order_id      | references | null; false, foreign_key: true |
+| order         | references | null; false, foreign_key: true |
 
 ### Association
 - belongs_to :order
